@@ -23,21 +23,21 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-import React, {
-  PropTypes,
-} from 'react';
+import React from 'react';
 import {
   Platform,
   Animated,
   Image,
   StyleSheet,
   Text,
+  ViewPropTypes,
   TouchableOpacity,
   View,
 } from 'react-native';
 import Actions from './Actions';
 import _drawerImage from './menu_burger.png';
 import _backButtonImage from './back_chevron.png';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   title: {
@@ -154,7 +154,7 @@ const propTypes = {
   wrapBy: PropTypes.any,
   component: PropTypes.any,
   backButtonTextStyle: Text.propTypes.style,
-  leftButtonStyle: View.propTypes.style,
+  leftButtonStyle: ViewPropTypes.style,
   leftButtonIconStyle: Image.propTypes.style,
   getTitle: PropTypes.func,
   titleWrapperStyle: Text.propTypes.style,
@@ -162,7 +162,7 @@ const propTypes = {
   titleOpacity: PropTypes.number,
   titleProps: PropTypes.any,
   position: PropTypes.object,
-  navigationBarStyle: View.propTypes.style,
+  navigationBarStyle: ViewPropTypes.style,
   navigationBarBackgroundImage: Image.propTypes.source,
   renderTitle: PropTypes.any,
 };

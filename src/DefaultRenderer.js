@@ -8,7 +8,6 @@
  */
 import React, {
   Component,
-  PropTypes,
 } from 'react';
 import {
   Animated,
@@ -18,7 +17,7 @@ import {
 } from 'react-native';
 import NavigationExperimental from 'react-native-experimental-navigation';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-
+import PropTypes from 'prop-types';
 import TabBar from './TabBar';
 import NavBar from './NavBar';
 import Actions from './Actions';

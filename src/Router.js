@@ -7,12 +7,11 @@
  *
  */
 import React, {
-  Component,
-  PropTypes,
+  Component
 } from 'react';
 import { BackAndroid } from 'react-native';
 import NavigationExperimental from 'react-native-experimental-navigation';
-
+import PropTypes from 'prop-types';
 import Actions, { ActionMap } from './Actions';
 import getInitialStateFromRoot from './State';
 import Reducer, { findElement } from './Reducer';

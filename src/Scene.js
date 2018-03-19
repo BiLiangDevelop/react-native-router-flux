@@ -6,22 +6,22 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import React, { PropTypes } from 'react';
-import { View, Text } from 'react-native';
-
+import React from 'react';
+import { View, Text,ViewPropTypes } from 'react-native';
+import PropTypes from 'prop-types';
 export default class extends React.Component {
 
   // @todo - should all props be documented/specified here?
 
   static propTypes = {
-    tabBarStyle: View.propTypes.style,
-    tabBarSelectedItemStyle: View.propTypes.style,
-    tabBarIconContainerStyle: View.propTypes.style,
-    tabBarShadowStyle: View.propTypes.style,
-    tabSceneStyle: View.propTypes.style,
-    tabStyle: View.propTypes.style,
-    tabTitleStyle: Text.propTypes.style,
-    tabSelectedTitleStyle: Text.propTypes.style,
+    tabBarStyle: ViewPropTypes.style,
+    tabBarSelectedItemStyle: ViewPropTypes.style,
+    tabBarIconContainerStyle: ViewPropTypes.style,
+    tabBarShadowStyle: ViewPropTypes.style,
+    tabSceneStyle: ViewPropTypes.style,
+    tabStyle: ViewPropTypes.style,
+    tabTitleStyle: ViewPropTypes.style,
+    tabSelectedTitleStyle: ViewPropTypes.style,
     tabTitle: PropTypes.string,
   };
 
